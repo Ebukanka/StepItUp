@@ -1,6 +1,3 @@
-README.md
-markdown
-Copy code
 # Step It Up - E-commerce Shoe Shopping App
 
 ## Overview
