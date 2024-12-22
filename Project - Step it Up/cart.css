@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #43177c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.cart-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.cart-link:hover {
+    text-decoration: underline;
+}
+
+/* Cart Section */
+#cart {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-weight: bolder;
+}
+
+#cart-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items img{
+    width: 160px;
+    height: auto;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items li:last-child {
+    border-bottom: none;
+}
+
+#cart-items span {
+    font-size: 1rem;
+    color: #333;
+}
+
+#cart-items input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+#cart-items  a{
+    text-decoration: none;
+}
+
+#cart-items button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+#cart-items button:hover {
+    background-color: #c0392b;
+}
+
+
+
+/* Cart Summary */
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.cart-summary button {
+    padding: 10px 20px;
+    background-color: #43177c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+    background-color: #32125e;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #cart-items li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #cart-items span,
+    #cart-items input,
+    #cart-items button {
+        margin-bottom: 10px;
+    }
+
+    .cart-summary {
+        text-align: center;
+    }
+}

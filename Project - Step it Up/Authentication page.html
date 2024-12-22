@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step it up Signin/Login</title>
+    <link rel="stylesheet" href="Authentication page.css">
+</head>
+<body>
+    <section id="signIn-section">
+        <div class="signIn-form">
+            <img src="images/logo.png" alt="Step it up Logo">
+            <form id="signInForm">
+                <h1>Sign In</h1>
+                <div class="mb-3">
+                    <label for="signInEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="signInEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signInPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signInPassword" required>
+                </div>
+                <div class="mb-3">
+                    By signing in, you agree to our <a href="#">Terms and Conditions</a>.
+                </div>
+                <button type="submit" class="btn">Sign In</button>
+                <p>or</p>
+                <a href="#">Forgot Password</a>
+            </form>
+        </div>
+
+        <div class="new-form">
+            <p>New to Step it Up?</p>
+            <button type="button" class="btn" onclick="toggleForms('signUp')">Create Your Step it up Account</button>
+        </div>
+    </section>
+
+    <section id="signUp-section" style="display: none;">
+        <div class="signUp-form">
+            <img src="images/logo.png" alt="Step it up Logo">
+            <form id="signUpForm">
+                <h1>Create an Account</h1>
+                <div class="mb-3">
+                    <label for="signUpName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="signUpName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signUpEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="signUpEmail" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signUpPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signUpPassword" required>
+                </div>
+                <div class="mb-3">
+                    <label for="signUpRePassword" class="form-label">Re-enter Password</label>
+                    <input type="password" class="form-control" id="signUpRePassword" required>
+                </div>
+                <div class="mb-3">
+                    By signing up, you agree to our <a href="#">Terms and Conditions</a>.
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="new-form">
+            <p>Already have an account?</p>
+            <button type="button" class="btn" onclick="toggleForms('signIn')">Back to Sign In</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Step It Up. All rights reserved.</p>
+    </footer>
+
+    <script src="Authentication page.js"> </script>
+    <script src="Step it up.js"></script>
+</body>
+</html>
